@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff5f5f5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            
+       <include
+        android:id="@+id/home_message_layout"
+        layout="@layout/header_home_tab_layout" />
+       
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/index_content_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="136.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/beemgr"
+                    android:layout_width="210.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5.0px"
+                    android:clickable="true"
+                    android:background="@drawable/icon_homepage_flight_selector" >
+
+                    <TextView
+                        style="@style/text_home_style1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/beemgr"
+                        android:paddingLeft="12.0dip"
+                        android:paddingTop="12.0dip"
+                        android:textSize="25dip"
+                        android:text="蜜源管理" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/picmgr"
+                    android:layout_width="210.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0px"
+                    android:layout_marginRight="5.0px"
+                    android:clickable="true"
+                    android:background="@drawable/icon_homepage_train_selector" >
+
+                    <TextView
+                        style="@style/text_home_style1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/picmgr"
+                        android:paddingLeft="12.0dip"
+                        android:paddingTop="12.0dip"
+                        android:textSize="25dip"
+                        android:text="图片管理" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/index_content_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="136.0dip"
+                android:layout_marginTop="10.0px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+                
+                <FrameLayout
+                    android:id="@+id/positionmgr"
+                    android:layout_width="210.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5.0px"
+                    android:clickable="true"
+                    android:background="@drawable/icon_homepage_flight_selector" >
+
+                    <TextView
+                        style="@style/text_home_style1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/pointmgr"
+                        android:paddingLeft="12.0dip"
+                        android:paddingTop="12.0dip"
+                        android:textSize="25dip"
+                        android:text="位置管理" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/refreshmgr"
+                    android:layout_width="210.0px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0px"
+                    android:layout_marginRight="5.0px"
+                    android:clickable="true"
+                    android:background="@drawable/icon_homepage_tickets_selector" >
+
+                    <TextView
+                        style="@style/text_home_style1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/refreshmgr"
+                        android:paddingLeft="12.0dip"
+                        android:paddingTop="12.0dip"
+                        android:textSize="25dip"
+                        android:text="参数更新" />
+                </FrameLayout>
+                
+                
+                
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_bottom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+               
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="38.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/home_index_bottom_voice_layout"
+                    android:layout_width="217px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5.0px"
+                    android:background="@drawable/icon_homepage_btn_selector" >
+
+                    <TextView
+                        style="@style/text_home_style4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="中国蜂产品协会"
+                        android:textStyle="bold"
+       
+                         />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/home_index_bottom_layout"
+                    android:layout_width="217px"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0px"
+                    android:background="@drawable/icon_homepage_btn_selector" >
+
+                    <TextView
+                        android:id="@+id/home_index_bottom_text"
+                        style="@style/text_home_style4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:gravity="center_vertical"
+                        android:text="010-87879988"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/icon_home_call"
+                        
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            
+           </LinearLayout>
+  </LinearLayout>

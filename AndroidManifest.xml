@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bee"
+    android:versionCode="1"
+    android:versionName="0.1.1 " >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <permission
+        android:name="com.bee.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.bee.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.bee.app.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name" >
+
+        <!-- <uses-library android:name="com.google.android.maps" android:required="false"/> -->
+        <activity
+            android:name="com.bee.app.ui.InfoListActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bee.app.ui.PointListActivity2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bee.app.ui.WebActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bee.app.ui.SystemSettingActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.bee.app.ui.CamActivity0814"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.bee.QUICK_PIC_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.PIC_EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.PIC_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        <activity
+            android:name="com.bee.app.ui.CamActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.bee.QUICK_PIC_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.PIC_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity
+            android:name="com.bee.app.ui.PicListCusorActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.bee.app.ui.CurrentTaskActivity" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.UploadPicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!--
+        <activity
+            android:name="com.bee.app.ui.AddActivity2"
+            android:label="@string/title_activity_add_activity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.bee.BEE_EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.BEE_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.QUICK_BEE_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity
+            android:name="com.bee.app.ui.AddActivity0815"
+            android:label="@string/title_activity_add_activity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.bee.BEE_EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.BEE_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.QUICK_BEE_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.LoginDialog"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HalfTranslucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.bee.app.ui.MyPositionActivity2"
+            android:label="@string/title_activity_my_position_activity2" >
+            <intent-filter>
+                <action android:name="com.bee.POINT_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.QUICK_POINT_ADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bee.POINT_EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bee.base.BaseUi"
+            android:label="@string/title_activity_base_ui" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.bee.app.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.bee" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.bee" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.    用户自定义的广播接收器 -->
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="26a6af4bb9adeff0a26ed4ea" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+        <activity
+            android:name="com.bee.app.ui.MainOne"
+            android:label="@string/title_activity_main_one"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.Main2"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.MainPage"
+            android:label="@string/title_activity_main_page"
+            android:launchMode="singleTask" >
+        </activity>
+        
+         <activity
+            android:name="com.bee.app.ui.MainPage2"
+            android:label="@string/title_activity_main_page"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.Setting"
+            android:label="@string/title_activity_setting"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Preference" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.BeeSourceView"
+            android:label="@string/title_activity_bee_source_view"
+            android:theme="@style/Theme.HalfTranslucent" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.UserPointView"
+            android:label="@string/title_activity_user_point_view"
+            android:theme="@style/Theme.HalfTranslucent" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.PicInfoView"
+            android:label="@string/title_activity_pic_info_view"
+            android:theme="@style/Theme.HalfTranslucent" >
+        </activity>
+        <activity
+            android:name="com.bee.app.ui.PasswordModifyActivity"
+            android:label="@string/title_activity_password_modify" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="10" />
+
+</manifest>

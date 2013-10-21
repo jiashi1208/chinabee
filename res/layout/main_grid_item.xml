@@ -1,0 +1,30 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_item"
+    android:id="@+id/relativeLayout"
+    android:padding="0dip"
+    >
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/beelist"
+        
+        
+        />
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="蜜源管理"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

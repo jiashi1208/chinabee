@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_relativelayout_header" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="40dip"
+  	android:background="@color/yellow"
+  	>
+    
+    <TextView 
+        android:id="@+id/main_head_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="5.0dip"
+		android:textSize="25dip"
+		android:textColor="@color/white"
+		android:text="图片查看上传"/>
+    
+    
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:id="@+id/gridpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dip"
+        android:visibility="gone"
+        android:src="@drawable/icon_post">"
+        
+    </ImageButton>
+    
+    <ImageButton 
+        android:id="@+id/listpic" 
+        android:layout_toLeftOf="@id/gridpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dip"
+        android:visibility="gone"
+        android:src="@drawable/icon_post"/>"
+        
+    
+    
+    
+	
+</RelativeLayout>

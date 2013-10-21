@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/getlocal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+       
+       <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_marginTop="5dip"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:layout_height="fill_parent">
+                
+              <ImageButton
+                 android:id="@+id/catch_imgbutton"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="50dip"
+                 android:layout_gravity="center"
+                 android:padding="0dip"
+                 android:src="@drawable/gps_btn_selector" />
+                             
+              <TextView
+                    android:id="@+id/labelText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    
+                    android:paddingLeft="0dip"
+                    android:textSize="20dip"
+                    android:layout_marginTop="10dip"                  
+                    android:text="点击获取位置信息"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:textColor="@color/blue"
+                    >
+                </TextView>
+                   
+       </LinearLayout > 
+       
+    <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="8dip"
+           android:layout_marginTop="8dip"
+           
+           >
+    
+    <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5.0dip"
+           android:layout_marginLeft="13.0dip"
+           android:layout_marginRight="13.0dip"
+           android:layout_marginTop="5.0dip"
+           android:background="@drawable/bg_common_item"
+
+           >
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="经度： "
+           android:textColor="@color/blue"
+           android:layout_weight="0.7"
+           android:layout_marginLeft="5dip"
+           android:textSize="18sp" />
+
+       <TextView
+           android:id="@+id/lngview"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" 
+           android:layout_weight="0.3"
+           android:textSize="20sp"
+           android:textColor="@color/green" >
+       </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5.0dip"
+           android:layout_marginLeft="13.0dip"
+           android:layout_marginRight="13.0dip"
+           android:layout_marginTop="5.0dip"
+           android:background="@drawable/bg_common_item"
+           >
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="纬度： "
+           android:textColor="@color/blue"
+           android:layout_weight="0.7"
+           android:layout_marginLeft="5dip"
+           android:textSize="18sp" />
+
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/latview"
+           android:layout_weight="0.3"
+           android:textSize="20sp"
+           android:textColor="@color/green" >
+       </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5.0dip"
+           android:layout_marginLeft="13.0dip"
+           android:layout_marginRight="13.0dip"
+           android:layout_marginTop="5.0dip"
+           android:background="@drawable/bg_common_item"
+
+           >
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="具体位置:"
+           android:textColor="@color/blue"
+           android:layout_weight="0.7"
+           android:layout_marginLeft="5dip"
+           
+           android:textSize="18sp" />
+
+       <TextView
+           android:id="@+id/position_name"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:layout_weight="0.3"
+           android:maxLines="2"
+           android:textColor="@color/green" >
+           
+       </TextView>
+    </LinearLayout>
+    
+        <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="5.0dip"
+           android:layout_marginLeft="13.0dip"
+           android:layout_marginRight="13.0dip"
+           android:layout_marginTop="5.0dip"
+           android:background="@drawable/bg_common_item"
+
+           >
+       
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:text="位置描述:"
+           android:textColor="@color/blue"
+           android:layout_weight="0.7"
+           android:layout_marginLeft="5dip"
+           
+           android:textSize="18sp" />
+
+       <EditText
+           android:id="@+id/placeName"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:layout_weight="0.3"
+           android:maxLines="2"
+           android:textColor="@color/green" >
+           
+       </EditText>
+    </LinearLayout>
+    
+    
+    </LinearLayout>
+    
+    <include  layout="@layout/main_footer" 
+              />
+
+</LinearLayout>

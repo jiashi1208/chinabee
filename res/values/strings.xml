@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜜源信息采集</string>
+    <string name="save">设置</string>
+    <string name="gridview1">新增蜜源</string>
+    <string name="gridview2">图片拍照</string>
+    <string name="gridview3">主站浏览</string>
+    <string name="gridview4">全部蜜源</string>
+    <string name="gridview5">全部图片</string>
+    <string name="app_loading_message">正在定位中...</string>
+    <string name="regex_email">^([^@\\s]+)@((?:[-a-z0-9]+\\.)+[a-z]{2,})$</string>
+    <string name="regex_phone">^\\(?\\d{3}[\\)?|-]\\d{3}[- ]\\d{4}((\\s=?)(ext\\.|x)\\d{1,4})?$</string>
+    <string name="regex_postal_code">^\\d{5}(-\\d{4})?$</string>
+
+    <string-array name="beeType">
+        <item>意蜂</item>
+        <item>中峰</item>
+        <item>黑锋</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="honeyType">
+        <item>枣花蜜</item>
+        <item>洋槐蜜</item>
+        <item>荆条蜜</item>
+        <item>油菜蜜</item>
+        <item>杂花蜜</item>
+        <item>紫云英蜜</item>
+        <item>桂花蜜</item>
+        <item>益母草蜜</item>
+        <item>银杏蜜</item>
+        <item>黄连蜜</item>
+        <item>野菊蜜</item>
+        <item>枸杞蜜</item>
+        <item>党参蜜</item>
+        <item>龙眼蜜</item>
+        <item>枇杷蜜</item>
+        <item>玄参蜜</item>
+        <item>山楂蜜</item>
+        <item>荞麦蜜</item>
+        <item>五味子蜜</item>
+        <item>雪脂莲蜜</item>
+        <item>野玫瑰蜜</item>
+        <item>桔梗蜜</item>
+        <item>荔枝蜜</item>
+        <item>蒲公英蜜</item>
+        <item>椴树蜜</item>
+        <item>兰花草蜂蜜</item>
+        <item>草苜蓿蜂蜜</item>
+        <item>石榴蜂蜜</item>
+        <item>野坝子蜂蜜</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="guige">
+        <item>吨</item>
+        <item>千克</item>
+    </string-array>
+    <string-array name="unitlist">
+        <item>ss</item>
+        <item>中国兵器</item>
+        <item>中核工业</item>
+    </string-array>
+
+    <string name="title_activity_add_activity2">AddActivity2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="beeType_prompt">选择蜜蜂类型</string>
+    <string name="title_activity_login_activity2">LoginActivity2</string>
+    <string name="title_activity_nine_box2">NineBox2</string>
+    <string name="title_activity_my_position">MyPositionActivity</string>
+    <string name="title_activity_my_position_activity2">MyPositionActivity2</string>
+    <string name="title_activity_base_ui">BaseUI</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="login_dialog_account">账号:</string>
+    <string name="login_dialog_account_hint">输入账号</string>
+    <string name="login_dialog_password">密码:</string>
+    <string name="login_dialog_password_hint">输入密码</string>
+    <string name="login_dialog_login">登  录</string>
+    <string name="login_dialog_rememberMe">记住我的登录信息</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="title_activity_main_one">MainOne</string>
+    <string name="title_activity_main2">Main2</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_bee_source_view">BeeSourceView</string>
+    <string name="title_activity_user_point_view">UserPointView</string>
+    <string name="title_activity_pic_info_view">PicInfoView</string>
+    <string name="title_activity_password_modify">PasswordModifyActivity</string>
+
+</resources>

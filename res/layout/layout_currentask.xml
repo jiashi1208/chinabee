@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="5dip">
+
+    
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColor="@color/red"
+            android:id="@+id/beeNumber"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+        />
+    
+    
+    <TextView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:text="条蜜源信息没有上传"/>
+    </LinearLayout>
+    
+    
+    
+   <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="5dip">
+
+    
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColor="@color/red"
+            android:id="@+id/picNumber"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+        />
+    
+    
+    <TextView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:text="张图片没有上传"/>
+    </LinearLayout>
+    
+     
+   
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="5dip">
+    
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pointNumber"
+            android:hint="0"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+        />
+       
+    <TextView 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:text="条位置信息没有上传"/>
+    </LinearLayout>
+
+    
+<!--     <Button 
+        android:id="@+id/refreshbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:textSize="18sp"
+        android:background="@drawable/onkey"
+        android:text="更新"
+        /> -->
+    
+ 
+</LinearLayout>

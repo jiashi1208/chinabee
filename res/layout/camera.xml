@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_background">
+    <include layout="@layout/main_header" />
+    
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_weight="1"
+                 android:layout_marginTop="8dip"
+                 android:layout_height="0dip">
+        <ImageView 
+            android:layout_width="fill_parent" 
+            android:layout_gravity="center"
+            android:layout_height="fill_parent"            
+            android:id="@+id/preview1" 
+            android:padding="0dip"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+
+            />
+        <ImageButton 
+            android:layout_width="wrap_content" 
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"            
+            android:id="@+id/camimgbtn" 
+            android:padding="0dip"
+            android:src="@drawable/cam_btn_selector"
+
+            />
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="12dip"
+            android:orientation="vertical"           
+            >
+        
+        <Button
+                android:id="@+id/newsfeedpublish_poi_place"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_common_item"
+                android:layout_marginBottom="5dip"
+                android:drawableLeft="@drawable/publisher_poi_icon"
+                android:drawablePadding="8dip"
+                android:ellipsize="start"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="正在定位..."
+                android:textSize="20dip"
+                android:textColor="#ff005092" />
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_common_item"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+             >
+        
+        <TextView
+                android:text="请输入该图片名称："
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dip"
+                android:textColor="@color/blue"
+                android:layout_marginRight="12dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                >
+        </TextView>
+        <EditText 
+            android:id="@+id/picName"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#33ff33"
+                  android:layout_weight="1"
+                  android:maxLines="2"
+
+                />
+        
+        </LinearLayout>
+    </LinearLayout>
+
+<include  layout="@layout/main_footer" />
+
+</LinearLayout>

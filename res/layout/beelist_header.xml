@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@color/yellow"
+   >
+    
+     <TextView 
+        android:id="@+id/pointlist_head_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="5.0dip"
+		android:textSize="25dip"
+		android:textColor="@color/white"
+		android:text="蜜源信息列表"/>
+    
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:text="添加"
+        android:padding="2dip"
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:textSize="20dip" />
+  
+        
+        
+</RelativeLayout>

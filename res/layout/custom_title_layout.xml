@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/custom_title_background" android:layout_width="fill_parent" android:layout_height="46dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TextView android:textSize="25.0sp"
+        android:textColor="@color/white" 
+        android:layout_centerVertical="true"
+        android:id="@+id/custom_title_label" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="8dip"
+        android:text="待办事项"
+         />
+   
+</RelativeLayout>

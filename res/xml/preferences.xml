@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:layout="@layout/preference_category" 
+	    android:title="账号管理">
+	    <Preference 
+            android:layout="@layout/preference" 
+	        android:title="用户登录" 
+	        android:key="account" />
+	    
+    </PreferenceCategory>
+    <PreferenceCategory 
+        android:layout="@layout/preference_category" 
+	    android:title="功能设置">
+	    
+        <Preference 
+            android:layout="@layout/preference" 
+	        android:title="网络设置" 
+	        android:key="network" 
+	        android:summary="网络服务器设置"/>
+        
+        
+        <Preference 
+            android:layout="@layout/preference" 
+	        android:title="修改密码" 
+	        android:key="passwd" 
+	        android:summary="修改用户密码"/>
+             
+		 <Preference 
+		    android:layout="@layout/preference" 
+	        android:title="新版本检测" 
+	        android:key="update" 
+	        android:summary="检测是否有新版本"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

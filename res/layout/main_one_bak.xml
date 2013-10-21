@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" 
+    >
+
+    <LinearLayout
+        android:id="@+id/main_custom_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_title_bg" >
+            
+        <include layout="@layout/custom_title_layout" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checker"
+        android:layout_width="fill_parent" 
+        android:layout_height="294dip"
+        android:layout_below="@id/main_custom_title"
+        android:gravity="center_horizontal"
+        android:background="@drawable/introduce_blue_bg"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_currentask" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_btm"
+        android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:layout_marginTop="0dip"
+        android:background="@drawable/main_bottom_bg"
+        android:layout_below="@id/checker"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/main_btn_antivirus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0.0dip" >
+
+            <Button
+                android:id="@+id/btn_malware_check"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.0dip"
+                android:background="@drawable/main_btn_security_pressed_bg" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            
+                android:layout_centerHorizontal="true"
+                android:text="一键操作"
+                android:textAppearance="@style/MainBtmPriText"
+                
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dip" 
+                android:textColor="#ff666666" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_btm_gap_line" />
+
+        <RelativeLayout
+            android:id="@+id/main_btn_scan_adware"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0.0dip" >
+
+            <Button
+                android:id="@+id/btn_action_check"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0.0dip"
+                android:background="@drawable/main_btn_scaned_action_bg" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:layout_centerHorizontal="true"
+                android:text="蜜源管理"
+                android:textAppearance="@style/MainBtmPriText"
+                
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dip" 
+                
+                android:textColor="#ff666666" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

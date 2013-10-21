@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_blue">#246c73</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#53bade</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FF9900</color>
+
+    <color name="light_green">#5ccca1</color>
+    <color name="light_orange">#f8a56e</color>
+    <color name="light_blue">#abdfe9</color>
+    <color name="light_gray">#999999</color>
+    <color name="list_item_bg">#ffe7e6e3</color>
+    <color name="distance_bg">#ffcccccc</color>
+    <color name="deep_gray">#ff333333</color>
+    <color name="light_white">#FFF3FDFF</color>
+    <color name="deep_white">#f0f0f0</color>
+
+    <color name="text_red">#ff0000</color>
+    <color name="text_black">#ff000000</color>
+    <color name="text_blue">#ee0000c6</color>
+    <color name="text_dark_red">#ffcc0000</color>
+    <color name="text_purple">#9F4D95</color>
+    <color name="text_green">#c000ff00</color>
+    <color name="add_btn">#ff8a8a8a</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="feedback_color">#4DEC130B</color>
+    <color name="light_black">#70000000</color>
+
+    <color name="alpha_black1">#90000000</color>
+    <color name="alpha_black2">#40000000</color>
+    <color name="alpha_white1">#b0ffffff</color>
+    <color name="alpha_white2">#60ffffff</color>
+
+    <color name="deal_header_bg">#f3f3f3</color>
+    <color name="distance_range_bg">#f9f9f9</color>
+    <color name="category_left_item_bg">#e1e1e1</color>
+    <color name="category_right_item_bg">#bebebe</color>
+
+    <color name="hot_item_bg">#f2f2f2</color>
+    <color name="find_password">#0033b5e5</color>
+
+    <color name="detail_bg">#baa7a1</color>
+    <color name="textcolor_hint">#00ccff</color>
+    <color name="green">#33ff33</color>
+    <color name="listitem_transparent">#00000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    
+    <color name="listitem_gray">#ff9da19e</color>
+    
+    <color name="listitem_black">#ff000000</color>
+    
+    <color name="window_background">#ffeef0f0</color>
+    <color name="main_bg">#fff5f5f5</color>
+    <color name="gray_line">#ffe2e2e2</color>
+    
+    <color name="none_color">#00000000</color>
+    
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    
+    <color name="head_text">#0e5986</color>
+    
+    <color name="dim_foreground_light">#808080</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#ff006eaa</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    
+    <color name="help_item">#ff8d8d8d</color>
+    
+    <color name="g_child_page_bg_color">#ffe2e2db</color>
+    
+    <color name="text_white_shadow_color">#ff5a9487</color>
+    
+    
+    
+    
+    
+    
+
+</resources>

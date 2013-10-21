@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/main_btm"
+    android:background="@drawable/main_bottom_bg" 
+    android:padding="0.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dip"
+    >
+    
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_btn_antivirus" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@+id/btn_malware_check" android:background="@drawable/main_btn_security_pressed_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" />
+            <TextView  android:id="@+id/desc_malware_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView  android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一键操作" android:layout_above="@id/desc_malware_check" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/main_btm_gap_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_btn_scan_adware" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@+id/btn_action_check" android:background="@drawable/main_btn_scaned_action_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" />
+            <TextView  android:id="@+id/desc_action_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView  android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蜜源管理" android:layout_above="@id/desc_action_check" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        
+</LinearLayout>

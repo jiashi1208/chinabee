@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_background"
+    android:orientation="vertical" >
+    
+   <include layout="@layout/main_header" />   
+   
+   <ScrollView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:scrollbars="vertical"
+        android:scaleType="centerInside"
+        android:layout_weight="1"
+        android:background="@color/window_background"
+       >
+    <LinearLayout 
+                  android:orientation="vertical" 
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="5dip"               
+                 >
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                >
+            <TextView
+                    android:text="蜜源追溯码*"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    >
+                
+            </TextView>
+            <EditText
+                    android:id="@+id/a1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:numeric="integer"
+                    android:maxLength="9"
+                    android:hint="追溯码必须为9位数字"
+                    android:textColorHint="#00CCFF"
+                    ></EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_common_item"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+             >
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      >
+            <TextView
+                    android:text="饲养人"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.5"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    android:width="110px"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="#00CCFF"
+                    android:textSize="13sp"
+                    ></EditText>
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@color/gray_line" />
+        
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      >
+            <TextView
+                    android:text="地点"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColorHint="#00CCFF"
+                    android:textSize="13sp"
+                    ></EditText>
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+         <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+
+            <TextView
+                    android:text="原料种类"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dip"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical|left"
+                    android:width="110px"></TextView>
+
+            <Spinner android:id="@+id/a5"
+                     android:prompt="@string/beeType_prompt"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:drawSelectorOnTop = "true"
+                     android:layout_weight="1"
+                     
+                     android:focusable="false"
+                     android:focusableInTouchMode="false"
+                     
+                     android:textSize="13sp" />
+                
+        </LinearLayout>
+                 
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+
+            <TextView
+                    android:text="蜂种"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dip"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+
+            <Spinner android:id="@+id/a16"
+                     android:prompt="@string/beeType_prompt"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1"
+                     android:drawSelectorOnTop = "true"
+                     
+                     android:focusable="false"
+                    android:focusableInTouchMode="false"
+
+                     android:textSize="13sp" />
+                
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_common_item"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip" > 
+        
+        
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+            <TextView
+                    android:text="数量"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.5"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    android:textColorHint="#00CCFF"
+                    android:hint="数量必须为数字"
+                    ></EditText>
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@color/gray_line" />
+
+         <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      >
+
+            <TextView
+                    android:text="规格"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dip"
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:layout_marginLeft="12dip"
+                    android:textColor="@color/black"
+                    
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+  
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+
+            <Spinner android:id="@+id/a8"
+                     android:prompt="@string/beeType_prompt"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:focusable="false"
+                     android:layout_weight="1"
+                     android:drawSelectorOnTop = "true"
+                     android:textSize="13sp" />
+        </LinearLayout>
+        
+         </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+            <TextView
+                    android:text="浓度(波美度)"
+                    android:singleLine="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:hint="浓度必须为数字"
+                    android:textColorHint="#00CCFF"
+                    ></EditText>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+            <TextView
+                    android:text="摇蜜间隔(天)"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textColorHint="#00CCFF"
+                    android:text=""
+                    android:nextFocusDown="@+id/a12"
+                    android:inputType="number"
+                    ></EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_common_item"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip" > 
+       
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      >
+            <TextView
+                    android:text="首次采收日期"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    android:singleLine="true"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:text=""
+                    android:hint="首次采收日期"
+                    android:textColorHint="#00CCFF"
+                    android:inputType="none"
+                    android:editable="false"
+                    ></EditText>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@color/gray_line" />
+        
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+           
+                      >
+            <TextView
+                    android:text="末次采收日期"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:text=""
+                    android:hint="末次采收日期"
+                    android:textColorHint="#00CCFF"
+                    android:inputType="none"
+                    android:editable="false"
+                    ></EditText>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:background="@color/gray_line" />
+        
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+
+                      >
+            <TextView
+                    android:text="收购日期"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.5"
+                    android:singleLine="true"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    />
+            <EditText
+                    android:id="@+id/a14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:text=""
+                    android:hint="收购日期"
+                    android:textColorHint="#00CCFF"
+                    android:inputType="none"
+                    android:editable="false"
+                    ></EditText>
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+                <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+            <TextView
+                    android:text="饲料"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textColorHint="#00CCFF"
+                    ></EditText>
+
+        </LinearLayout>
+        
+         <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+            <TextView
+                    android:text="用药情况"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:layout_weight="1.5"
+                    android:layout_marginLeft="12dip"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textColorHint="#00CCFF"
+                    android:text=""
+                    ></EditText>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/bg_common_item"
+                      android:layout_marginRight="12dip"
+                      android:layout_marginLeft="12dip"
+                      android:layout_marginTop="12dip">
+            <TextView
+                    android:text="收购单位"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical|left"
+                    ></TextView>
+            <EditText
+                    android:id="@+id/a15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textColorHint="#00CCFF"
+                    android:text=""
+                    >
+                
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+   <include  layout="@layout/main_footer" />
+</LinearLayout>

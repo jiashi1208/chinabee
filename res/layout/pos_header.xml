@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_relativelayout_header" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="40dip"
+  	android:background="@color/yellow">
+  	
+<!--     <ImageView
+    	android:id="@+id/head_logo"
+  		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="5.0dip"
+		android:src="@drawable/icon_post"/> -->
+    
+
+    
+    <TextView 
+        android:id="@+id/main_head_title"
+
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="5.0dip"
+		android:textColor="@color/white"
+		android:textSize="20dip"
+		android:text="位置信息"/>
+    
+     <ProgressBar 
+		android:id="@+id/pos_head_progress" 
+		style="@style/loading_small"
+		android:layout_toRightOf="@id/main_head_title"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5.0dip"
+		android:visibility="gone"/>
+	
+</RelativeLayout>

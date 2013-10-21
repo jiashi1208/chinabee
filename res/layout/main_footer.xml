@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:id="@+id/main_footer"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	>
+	
+    <Button 
+        android:id="@+id/button_save"
+        android:text="保存"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:padding="0dip"
+        android:textSize="20dip"
+        android:background="@drawable/btn_call"
+        android:textColor="@color/white"
+        android:layout_margin="5dip"
+        android:layout_height="wrap_content">
+    </Button>
+    
+ 
+    <Button android:id="@+id/button_upload"   
+        android:padding="0dip"    
+        android:text="上传"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:textSize="20dip"
+        android:layout_margin="5dip"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_call"
+        android:visibility="gone" 
+        android:layout_height="wrap_content">     
+    </Button>
+    
+    <Button android:id="@+id/button_next"   
+        android:padding="0dip"    
+        android:text="下一步"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:textSize="20dip"
+        android:layout_margin="5dip"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/btn_call"
+        android:layout_height="wrap_content">     
+    </Button>
+    
+    <Button android:id="@+id/button_skip"   
+        android:padding="0dip"    
+        android:text="跳过"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:textSize="20dip"
+        android:layout_margin="5dip"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/btn_call"
+        android:layout_height="wrap_content">     
+    </Button>
+
+</LinearLayout>
